@@ -1,0 +1,8 @@
+{"index":{"School":0,"Skills":1,"Projects":2,"Tips":3},
+  "nodes":[ {"name":"School","color":""},
+            {"name":"Skills","color":""},
+            {"name":"Projects","color":""},
+            {"name":"Tips","color":""}
+          ],
+  "links":[]
+}

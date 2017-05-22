@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<style>
+a {
+  font-size: 20px
+}
+.pointer{
+  cursor: pointer;
+  opacity: 1
+}
+.pointer:hover{
+  opacity: 0.78
+}
+</style>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css">
+</head>
+<body>
+
+  <div class="container is-fluid">
+
+
+
+    <div class="columns">
+      <div class="column">
+        <div class="box">
+          <nav class="level">
+            <p class="level-item has-text-centered">
+              <a class="link is-info">Home</a>
+            </p>
+            <p class="level-item has-text-centered">
+              <a class="link is-info">Blog</a>
+            </p>
+            <p class="level-item has-text-centered">
+              <img src="cmyk.png" alt="" style="height: 30px;">
+            </p>
+            <p class="level-item has-text-centered">
+              <a class="link is-info">Contact</a>
+            </p>
+            <p class="level-item has-text-centered">
+              <a class="link is-info">Portfolio</a>
+            </p>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+    <div class="tile is-ancestor">
+        <div class="tile is-vertical is-9">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification is-primary">
+                <p class="title">Machine learning</p>
+                <div class="content">
+                <ul>
+                  <li class="pointer" onclick="window.location.href='https://github.com/abenc/MachineLearningProject/blob/master/data_processing/Data%20Cleaning%20and%20expanding.ipynb'" >Data exploration</li>
+                  <li>Data cleaning</li>
+                  <li>Application de differents algorithmes sur set de données en R</li>
+                  <li>Resultats, explications & axes d'amélioration</li>
+                </ul>
+              </div>
+              </article>
+              <article class="tile is-child notification is-warning">
+                <p class="title">HDFS & Spark </p>
+                <div class="content">
+                <ul>
+                  <li> Deployer un cluster Spark</li>
+                  <li> Deployer un cluster HDFS</li>
+                  <li> Utilisation de Spark & HDFS
+                </ul>
+              </div>
+              </article>
+            </div>
+
+            <div class="tile is-parent">
+              <article class="tile is-child notification is-info">
+                <p class="title">Network cloud application</p>
+                <!--<p class="subtitle">Le but de cette application est de creer une visualsation interactive à l'aide de differents noeuds, liés & ponrdérés selon le contexte souhaité</p>
+                -->
+                <p class="subtitle">Cliquez pour en savoir plus ! </p>
+                <figure class="image is-4by3" >
+                  <img src="cmyk.svg" >
+                </figure>
+              </article>
+            </div>
+
+          </div>
+
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-danger">
+              <p class="title">Ajustement de loi de probabilité</p>
+              <p class="subtitle">Resolution d'une serie d'exercices dans le cadre de la quantification de risque que peut presenter une population</p>
+              <div class="content">
+              <ul>
+                <li>Les differentes techniques de simulation de differentes lois de probabilités  </li>
+                <li>Comment proceder pour determiner la loi de distribution d'un echantillon</li>
+                <li>Etude des valeurs extremes des echantillons</li>
+              </ul>
+            </div>
+              <div class="content">
+                <!-- Content -->
+              </div>
+            </article>
+          </div>
+
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification is-success">
+            <div class="content">
+              <p class="title">Data visualisation</p>
+              <p class="subtitle"></p>
+              <div class="content">
+                <ul>
+                  <li>Implementation de visualisation des echantillons sous python & R</li>
+                  <li>Interpretation de ces visualisations </li>
+                  <li>Techniques de reduction de dimension</li>
+                  <li>Exemple d'implementation du Fuzzy C-means ( variante du k-means ) en python</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "mypersowebsite",
+  "version": "1.0.0",
+  "description": "site web perso sous neural network graphe single page app ,;)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abenc/sitewebperso.git"
+  },
+  "keywords": [
+    "keywords"
+  ],
+  "author": "Anir",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/abenc/sitewebperso/issues"
+  },
+  "homepage": "https://github.com/abenc/sitewebperso#readme",
+  "dependencies": {
+    "body-parser": "^1.17.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.0"
+  }
+}
