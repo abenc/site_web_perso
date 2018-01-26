@@ -17,8 +17,12 @@ exports.test_parse = function(req,res){
 
   var User
   res.send("YOLO")
+}
+exports.test_parse = function(req,res){
+  var Parse_Network = Parse.Object.extend('Network')
+  var myNetwork     = new Parse_Network()
+  myNetwork.save(req.body.network)
 }*/
-
 /**@function showpopup
 @TODO fonction inutile, dans la mesure ou ce qui est interessant c'est la page ejs que j'appelle 'success qui contient une popup que j'ai pu inclure depuis un fichier ejs dans la toolbox_css
 @param req,res default
@@ -26,6 +30,7 @@ exports.test_parse = function(req,res){
 @return
 @author abenc
 **/
+
 exports.renderAccueil = function(req,res){
     res.render("accueil.ejs")
 }
@@ -58,7 +63,6 @@ exports.update_tNet = function(req,res){
       treeNet = new Net()
       fs.readFile("x.json", 'utf8', function (err, data) {
                 if (err) throw err
-
                 obj = JSON.parse(data)
                   treeNet.readJson(obj)
                   treeNet.displayNet();
@@ -71,7 +75,13 @@ exports.update_tNet = function(req,res){
       treeNet.addEdge(req.body.node_name_source,req.body.node_name_target,req.body.weight)
     }
   }
-
+  if(req.method=="GET"){ //
+    fs.readFile("x.json",'utf8',function(err,data){
+      if (err) throw err
+      obj = JSON.parse(data)
+      res.render(data,accueil,ejs)
+    })
+  }
 }
 /**@function create_user
 @param req,res default
